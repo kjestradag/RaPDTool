@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>RaPDTool</h1>
+  <h1>${\color{brown}RaPDTool}$</h1>
   <h1>${{\color{red}Ra}pid\ {\color{red}P}rofiling\ and\ {\color{red}D}econvolution\ {\color{red}Tool}}\ for\ metagenomes$</h1>
 </div>
 
