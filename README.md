@@ -53,7 +53,9 @@ RaPDTool compare each bin against curated taxonomic mash databases like type mat
 
 > **Krona** (https://github.com/marbl/Krona/wiki)
 
-> RaPDTool **preconfigured** database [DB Mash format](https://figshare.com/ndownloader/files/37939296)
+> RaPDTool **preconfigured** databases:
+[DB Mash format](https://figshare.com/ndownloader/files/37939296)
+[FOCUS DB](https://figshare.com/ndownloader/files/37986051)
 
 **Perl Modules**
 
