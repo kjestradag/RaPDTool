@@ -100,7 +100,7 @@ and **download** the Singularity image [rapdtool](https://figshare.com/ndownload
 
 ### Option 2
 
-Make sure you have all **dependencies** installed and the **DATABASE** downloaded.
+Make sure you have all **dependencies** installed and all **DATABASES** downloaded.
 You also need to download and have in your path all the "bin" scripts.
 
 RaPDTool runs natively by calling the script:
