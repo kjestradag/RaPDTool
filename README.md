@@ -20,19 +20,19 @@ RaPDTool use metagenomic assemblies and call FOCUS profiler to report the organi
 ### 2. Deconvolve a metagenome into individual genomes or bins, and refine the set of MAGs.
 
 <p align="justify">
-If the input consist on a metagenome assembly, RaPDTool automatically call Metabat2  to aggregate individual genome bins. The bins are subsequently refined with Binning_refiner to produce a non-redundant set.
+RaPDTool automatically call Metabat2  to aggregate individual genome bins. The bins are subsequently refined with Binning_refiner to produce a non-redundant set.
 </p>
 
 ### 3. Estimate Completeness, Redundancy and MAG basic statistics with miComplete
  
 <p align="justify">
-In the version 2.0 of this pipeline, the refined set of bins are automatically processed with miComplete, a much faster tool than CheckM for this purpose. 
+The refined set of bins are automatically processed with miComplete, a much faster tool than CheckM for this purpose. 
 </p>
 
 ### 4. Evaluate the probable "taxonomic neighborhoods" of each resulting genome bin.
 
 <p align="justify">
-RaPDTool compare each bin against curated taxonomic mash databases like type material genome database from NCBI (NCBI_type_material.msh), the Genome Taxonomy Database (GTDBr202.msh) and a database that we built to enrich the one that comes by default with Focus, using almost entirely, the type material database. these databases are offered as representations or sketches that reduce storage space and computing time.
+RaPDTool compare each bin against curated taxonomic mash databases like type material genome database from NCBI and the Genome Taxonomy Database and each contig again a database that we built to enrich the one that comes by default with Focus, using almost entirely, the type material database. these databases are offered as representations or sketches that reduce storage space and computing time.
 </p>
 
 ## Dependencies:
