@@ -139,7 +139,7 @@ Contains the log file of the RaPDTool execution (logfmbm.txt).
 ### File "rapdtools_confidence.txt"
 
 <p align="justify">
-Summarizes the best/most reliable **Mash** hits to be able to classify at the genus or species level. For the gender level it is considered a cut-off value <= 0.08 and <= 0.05 for species level.
+Summarizes the best/most reliable **Mash** hits to be able to classify at the genus or species level. For the genus level it is considered a cut-off value <= 0.08 and <= 0.05 for species level.
 Additionally it contains the results of the taxonomic classification with Focus, leaving only the species with a relative abundance greater than 1.
 </p>
 
