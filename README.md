@@ -112,6 +112,14 @@ For more details of the Apptainer installation process, go [here](https://apptai
 Make sure you have all **dependencies** installed and all **DATABASES** downloaded.
 You also need to download and have in your path all the "bin" scripts.
 
+A simple way to get some of the dependencies ready is through the conda and pypi package managers:
+
+>  $ conda install focus metabat2 binning_refiner mash 
+
+>  $ pip install micomplete
+
+Please, you can check the detail of the installation of ([Prodigal](https://github.com/hyattpd/Prodigal/wiki/installation), [HMMR](http://hmmer.org/documentation.html), [Krona](https://github.com/marbl/Krona/wiki/Installing)) on their site.
+
 RaPDTool runs natively by calling the script:
   rapdtool_local.py
   
