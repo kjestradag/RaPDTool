@@ -118,7 +118,7 @@ A simple way to get some of the dependencies ready is through the conda and pypi
 
 >  $ pip install micomplete
 
-Please, you can check the detail of the installation of ([Prodigal](https://github.com/hyattpd/Prodigal/wiki/installation), [HMMR](http://hmmer.org/documentation.html), [Krona](https://github.com/marbl/Krona/wiki/Installing)) on their site.
+Please, you can check the detail of the installation of [Prodigal](https://github.com/hyattpd/Prodigal/wiki/installation), [HMMR](http://hmmer.org/documentation.html), or [Krona](https://github.com/marbl/Krona/wiki/Installing) on their site.
 
 RaPDTool runs natively by calling the script:
   rapdtool_local.py
