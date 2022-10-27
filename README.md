@@ -72,7 +72,7 @@ RaPDTool compare each bin against curated taxonomic mash databases like type mat
 RaPDTool pipeline it is written in Python and Perl and used several C scripts.
 For greater convenience/ease of installing rapdtools, we use the [Apptainer/Singularity](https://apptainer.org/) container platform and build an image with the complete environment (scripts, dependencies and databases) needed to run RapdTool.
 
-You just need to [download](https://figshare.com/ndownloader/files/37939014) the Singularity image **rapdtool** and have installed "Apptainer/Singularity". If you don't have it installed, you can install it with:
+You just need to [download](https://figshare.com/ndownloader/files/37939014) the Singularity image **rapdtool** and have installed "Apptainer/Singularity". If you don't have it installed, you can install it:
 
 **with Conda** 
 >  $ conda install -c conda-forge singularity 
