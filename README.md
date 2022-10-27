@@ -74,15 +74,15 @@ For greater convenience/ease of installing rapdtools, we use the [Apptainer/Sing
 
 You just need to [download](https://figshare.com/ndownloader/files/37939014) the Singularity image **rapdtool** and have installed "Apptainer/Singularity". If you don't have it installed, you can install it with:
 
-**Conda** 
+**with Conda** 
 >  $ conda install -c conda-forge singularity 
 
 Alternatively, x86_64 RPMs are available on GitHub immediately after each Apptainer release and they can be installed directly from there:
 
-**RPMs**
+**with RPMs**
 >  $ sudo yum install -y https://github.com/apptainer/apptainer/releases/download/v1.1.3/apptainer-1.1.3-1.x86_64.rpm
 
-**DEB**
+**with DEB**
 >  $ wget https://github.com/apptainer/apptainer/releases/download/v1.1.3/apptainer_1.1.3_amd64.deb
 
 >  $ sudo apt-get install -y ./apptainer_1.1.3_amd64.deb
