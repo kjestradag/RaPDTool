@@ -182,7 +182,7 @@ Contains several relevant subdirectories and files:
 
 **outbinningref**  > Binning_refiner results. All bins obtained with Metabat2 are "refined" with Binning_refiner to produce a set of probable MAGs
 
-**outmicomplete** > Hugoson et al, 2020 published a paper with a fairly "generous" alternative to estimate quality of assembled microbial genomes (https://doi.org/10.1093/bioinformatics/btz664). Although the gold standard is still CheckM, miComplete is more resource friendly and offers a weighted calculation. 
+**outmicomplete** > [Hugoson et al, 2020](https://doi.org/10.1093/bioinformatics/btz664) published a paper with a fairly "generous" alternative to estimate quality of assembled microbial genomes. Although the gold standard is still CheckM, miComplete is more resource friendly and offers a weighted calculation. 
 
 The result of miComplete is a table with the quality assessment of the refined bins as shown in the image:
 
@@ -195,15 +195,15 @@ The result of miComplete is a table with the quality assessment of the refined b
 |-------------|-------------------|--------------------|----------|---------------| 
 |  Bin1.fna   | GCA_Reference.fna |      0.0327655     |     0    |    471/1000   |
 
+The genomic distance in the third column refers to the Mash distance, also defined as mutational distance. You will find more information on the interpretation of these tables [here](https://doi.org/10.1186/s13059-016-0997-x).
 <p align="justify">
-The genomic distance in the third column refers to the Mash distance, also defined as mutational distance. You will find more information on the interpretation of these tables in: https://doi.org/10.1186/s13059-016-0997-x. A practical interpretation of this comparison suggests that if two genomic contexts share < 0.05 distance, they are likely to be genomically coherents, and that has implications for the prokaryotic species concept.
+A practical interpretation of this comparison suggests that if two genomic contexts share < 0.05 distance, they are likely to be genomically coherents, and that has implications for the prokaryotic species concept.
 </p>
-
 <p align="justify">
 This also means that those contexts with smaller genomic distances will potentially be the closest phylogenetic neighbors to your query; very useful if you want to explore the phylogenetic hypothesis.
 </p>
 
-Other subdirectories contain the log files of each task
+Other subdirectories contain the log files of each task.
 ***
  
 ### Directory "allresultsfmbm"
