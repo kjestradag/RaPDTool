@@ -72,15 +72,26 @@ RaPDTool compare each bin against curated taxonomic mash databases like type mat
 RaPDTool pipeline it is written in Python and Perl and used several C scripts.
 For greater convenience/ease of installing rapdtools, we use the [Apptainer/Singularity](https://apptainer.org/) container platform and build an image with the complete environment (scripts, dependencies and databases) needed to run RapdTool.
 
-You just need to have installed "Apptainer/Singularity" or install it with:
+You just need to [download](https://figshare.com/ndownloader/files/37939014) the Singularity image **rapdtool** and have installed "Apptainer/Singularity". If you don't have it installed, you can install it with:
 
-    $ conda install -c conda-forge singularity 
+**Conda** 
+>  $ conda install -c conda-forge singularity 
 
-and **download** the Singularity image [rapdtool](https://figshare.com/ndownloader/files/37939014)
+Alternatively, x86_64 RPMs are available on GitHub immediately after each Apptainer release and they can be installed directly from there:
 
-## Usage: 
+**RPMs**
+>  $ sudo yum install -y https://github.com/apptainer/apptainer/releases/download/v1.1.3/apptainer-1.1.3-1.x86_64.rpm
+
+**DEB**
+>  $ wget https://github.com/apptainer/apptainer/releases/download/v1.1.3/apptainer_1.1.3_amd64.deb
+
+>  $ sudo apt-get install -y ./apptainer_1.1.3_amd64.deb
+
+For more details of the Apptainer installation process, go [here](https://apptainer.org/docs/admin/main/installation.html).
+
+**Usage: (Install Option 1)** 
   
-> $ rapdtool <input.fasta> [output_dir]
+> rapdtool <input.fasta> [output_dir]
 
     the input file should be a metagenome assembly
   
@@ -104,7 +115,7 @@ You also need to download and have in your path all the "bin" scripts.
 RaPDTool runs natively by calling the script:
   rapdtool_local.py
   
-## Usage: 
+**Usage: (Install Option 2)** 
 
 > $ rapdtool_local.py -i <input.fasta> -d database.msh [-r output_dir]
     
