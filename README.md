@@ -53,7 +53,7 @@ RaPDTool compare each bin against curated taxonomic mash databases like type mat
 
 > **Krona** (https://github.com/marbl/Krona/wiki)
 
-> RaPDTool **preconfigured** databases:
+**RaPDTool preconfigured databases**
 
 [DB Mash format](https://figshare.com/ndownloader/files/37939296)
 
@@ -110,22 +110,25 @@ For more details of the Apptainer installation process, go [here](https://apptai
 ### Option 2
 
 Make sure you have all **dependencies** installed and all **DATABASES** downloaded.
-You also need to download and have in your path all the "bin" scripts.
+You also need to download and have in your path **all the "bin" scripts**.
 
 A simple way to get some of the dependencies ready is through the conda and pypi package managers:
 
->  $ conda install focus metabat2 binning_refiner mash 
+>  $ conda install -c bioconda focus metabat2 binning_refiner mash prodigal hmmer krona 
 
 >  $ pip install micomplete
 
-Please, you can check the detail of the installation of [Prodigal](https://github.com/hyattpd/Prodigal/wiki/installation), [HMMR](http://hmmer.org/documentation.html), or [Krona](https://github.com/marbl/Krona/wiki/Installing) on their site.
+Also, you can check [Prodigal](https://github.com/hyattpd/Prodigal/wiki/installation), [HMMR](http://hmmer.org/documentation.html), or [Krona](https://github.com/marbl/Krona/wiki/Installing) on their site for more details of these.
+
+Once the databases have been downloaded, you need to **create a folder rapdtool_DBs** (we suggest that it be within the path of the rest of the dependencies) and set the environment variable rapdtool_DB (export rapdtool_DB="../path/for/the/rapdtool_DBs")
 
 RaPDTool runs natively by calling the script:
   rapdtool_local.py
   
 **Usage: (Install Option 2)** 
 
-> $ rapdtool_local.py -i <input.fasta> -d database.msh [-r output_dir]
+old:   > $ rapdtool_local.py -i <input.fasta> -d database.msh [-r output_dir]
+> $ rapdtool_local.py -i <input.fasta> -d $rapdtool_DBs [-r output_dir]
     
     *no argument for this help
     
@@ -135,7 +138,7 @@ RaPDTool runs natively by calling the script:
     
     output_dir_name (default: rapdtool_results)
 
-    example : ./rapdtool.py -i INPUT.fasta -d DATABASE.msh -r OUTPUT_FOLDER
+    example : ./rapdtool.py -i INPUT.fasta -d $rapdtool_DBs -r OUTPUT_FOLDER
 
 ## Output directories and files
 
