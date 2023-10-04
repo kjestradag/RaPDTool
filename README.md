@@ -114,9 +114,10 @@ You also need to download and have in your path **all the "bin" scripts**.
 
 A simple way to get some of the dependencies ready is through the conda and pypi package managers:
 
->  $ conda install -c bioconda focus metabat2 binning_refiner mash prodigal hmmer krona 
+>  $ conda install -c bioconda focus metabat2 mash prodigal hmmer krona 
 
 >  $ pip install micomplete
+>  $ pip install Binning_refiner
 
 Also, you can check [Prodigal](https://github.com/hyattpd/Prodigal/wiki/installation), [HMMR](http://hmmer.org/documentation.html), or [Krona](https://github.com/marbl/Krona/wiki/Installing) on their site for more details of these.
 
