@@ -75,8 +75,9 @@ For greater convenience/ease of installing rapdtools, we use the [Apptainer/Sing
 You just need to [download](https://figshare.com/s/a89cae791f99852034e2) the Singularity image **rapdtool** and have installed "Apptainer/Singularity". If you don't have it installed, you can install it:
 
 >	$ sudo apt update
+>
 >	$ sudo apt install -y software-properties-common
->	# For the non-setuid installation use these commands:
+>	For the non-setuid installation use these commands:
 >		$ sudo add-apt-repository -y ppa:apptainer/ppa
 >		$ sudo apt update
 >		$ sudo apt install -y apptainer
