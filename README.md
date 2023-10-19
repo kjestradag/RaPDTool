@@ -92,18 +92,14 @@ RaPDTool v2.1.0
 
 
 usage:
-
+  
   $ rapdtool2 <input.fasta> [output_dir]
   
-  the input file should be a metagenome assembly
-
-  
+  > the input file should be a metagenome assembly
 
   optional:
   
   output_dir_name (default: rapdtool_results)
-
-  
 
   notes:
   
