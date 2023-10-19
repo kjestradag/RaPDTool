@@ -77,7 +77,9 @@ You just need to [download](https://figshare.com/s/a89cae791f99852034e2) the Sin
 >	$ sudo apt update
 >
 >	$ sudo apt install -y software-properties-common
+>
 >	For the non-setuid installation use these commands:
+> #
 >		$ sudo add-apt-repository -y ppa:apptainer/ppa
 >		$ sudo apt update
 >		$ sudo apt install -y apptainer
