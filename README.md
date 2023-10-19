@@ -72,7 +72,7 @@ RaPDTool compare each bin against curated taxonomic mash databases like type mat
 RaPDTool pipeline it is written in Python and Perl and used several C scripts.
 For greater convenience/ease of installing rapdtools, we use the [Apptainer/Singularity](https://apptainer.org/) container platform and build an image with the complete environment (scripts, dependencies and databases) needed to run RapdTool.
 
-You just need to [download](https://figshare.com/s/a89cae791f99852034e2) the Singularity image **rapdtool** and have installed "Apptainer/Singularity". If you don't have it installed, you can install it:
+You just need to [download](https://figshare.com/ndownloader/files/42798013) the Singularity image **rapdtool** and have installed "Apptainer/Singularity". If you don't have it installed, you can install it:
 
 >	$ sudo apt update
 >
@@ -88,21 +88,20 @@ For more details of the Apptainer installation process, go [here](https://apptai
 
 **Usage: (Install Option 1)** 
   
-> rapdtool <input.fasta> [output_dir]
+RaPDTool v2.1.0
+usage:
+  $ rapdtool2 <input.fasta> [output_dir]
+  the input file should be a metagenome assembly
 
-    the input file should be a metagenome assembly
-  
   optional:
+  output_dir_name (default: rapdtool_results)
 
-    output_dir_name (default: rapdtool_results)
-  
-  notes:
- 
-    1- You need to put "rapdtool" in your path, otherwise you must give the whole path so that it can be found.
+  notes: 1- you need to put "rapdtools" in your path, otherwise you must give the whole path so that it can be found.
+         2- The input fasta (.fna, .fasta) must exist in your $HOME, otherwise you need to set the environment variable APPTAINER_BIND\
+PATH
+         to bind paths where your sequences are located
+         ex: export APPTAINER_BINDPATH="../path/for/the/input/fasta"
 
-    2- The input fasta must exist in your $HOME, otherwise you need to set the environment variable SINGULARITY_BIND
-    to bind paths where your sequences are located
-    ex: export SINGULARITY_BIND="../path/for/the/input/fasta"
 
 ### Option 2
 
