@@ -106,6 +106,7 @@ usage:
   
 
   notes:
+  
     1- you need to put "rapdtools" in your path, otherwise you must give the whole path so that it can be found.
     2- The input fasta (.fna, .fasta) must exist in your $HOME, otherwise you need to set the environment variable APPTAINER_BIND\PATH to bind paths where your sequences are located
        ex: export APPTAINER_BINDPATH="../path/for/the/input/fasta"
