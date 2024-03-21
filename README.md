@@ -279,7 +279,7 @@ This work was developed in the group of **Dr. Ayixon Sánchez-Reyes**
   
   **Contact personal: ayixon@gmail.com         **Contact institutional: ayixon.sanchez@mail.ibt.unam.mx
   
-  Teammates: **Dr. Karel Johan Estrada Guerra (developer); Dra. Luz Bretón Deval; Dr. Maikel G. Fernández-López**
+  Teammates: **Dr. Karel Estrada (developer); Dra. Luz Bretón Deval; Dr. Maikel G. Fernández-López**
   
 We thank Ing. Roberto Peredo for his help in the development of this tool
 
